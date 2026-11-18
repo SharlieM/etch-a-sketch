@@ -10,12 +10,12 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 0;
-    width: 960px;
-    height: 960px;
-    border: 1px solid pink;
     justify-content: center;
     align-items: center;
     gap: 1px;
+    width: 960px;
+    height: 960px;
+    border: 1px solid pink;
 }
 
 .horizontalContainer {
