@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 960px;
+    height: 960px;
+    border: 1px solid pink;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.horizontalContainer {
+    display: flex;
+    width: 960px;
+    flex: 1 1 0%;
+    border: solid 1px pink;
+    gap: 1px;
+}
+
+.cell {
+    /*width and height will be set dinamicaly depedning on the count of cells*/
+    flex: 1 1 0%;
+    border: 1px solid rgba(25, 0, 255, 0.822);
+    background-color: rgba(255, 192, 203, 0.479);
+}
+
+.cell:hover {
+    background-color: rgba(255, 251, 0, 0.781)
+}
+
+button {
+    background-color: rgba(0, 0, 255, 0.74);
+    color: whitesmoke;
+    border: 1px solid  rgba(0, 0, 255, 0.74) ;
+    border-radius: 3px;
+    padding: 4px;
+    font-weight: bold;
+
+}
+
+
+
