@@ -1,12 +1,12 @@
-const containerDimention = 960;
+
 let button = document.getElementById("buttonId");
+
 button.addEventListener("click", (event) => {
     let squaresCount = Number(prompt("Please set number of squares between 0 and 100."));
     if(squaresCount > 0 && squaresCount < 100){
         clearContainer();
         createGrid(Number(squaresCount));
     } else {
-       //  clearContainer();
          alert("Wrong number of squares. Please try again.");
     }
 })

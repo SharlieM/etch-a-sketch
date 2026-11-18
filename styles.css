@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     flex-grow: 0;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /*by default it is stretch and make its stetch by opposite axis (row in this case)*/
     gap: 1px;
     width: 960px;
     height: 960px;
@@ -20,14 +20,14 @@ body {
 
 .horizontalContainer {
     display: flex;
-    width: 960px;
+    align-items: stretch;
+    gap: 1px;
+    align-items: stretch; /*by default it is stretch and makes its children to stetch by opposite axis (column in this case)*/
     flex: 1 1 0%;
     border: solid 1px pink;
-    gap: 1px;
 }
 
 .cell {
-    /*width and height will be set dinamicaly depedning on the count of cells*/
     flex: 1 1 0%;
     border: 1px solid rgba(25, 0, 255, 0.822);
     background-color: rgba(255, 192, 203, 0.479);
@@ -42,9 +42,10 @@ button {
     color: whitesmoke;
     border: 1px solid  rgba(0, 0, 255, 0.74) ;
     border-radius: 3px;
-    padding: 4px;
+    padding: 10px;
+    margin-top: 20px;
     font-weight: bold;
-
+    font-size: medium;
 }
 
 
