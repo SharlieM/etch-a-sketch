@@ -1,5 +1,6 @@
 
 let button = document.getElementById("buttonId");
+let opacity = 10;
 
 button.addEventListener("click", (event) => {
     let squaresCount = Number(prompt("Please set number of squares between 0 and 100."));
@@ -14,6 +15,8 @@ button.addEventListener("click", (event) => {
 //create matrix count x count
 function createGrid(count) {
     let container = document.getElementById("containerId");
+    //increase of opacity of cells after each interaction
+    increaseOpacity();
     for(let i = 0; i < count; i++){
         let horizontaDiv = createHorizontaDiv(i);
         //create div cells and set into horizontal div
@@ -25,11 +28,16 @@ function createGrid(count) {
     }
 }
 
+function increaseOpacity(){
+   opacity = opacity <= 90  ? opacity + 10 : 100;
+}
+
 //create div cell of matrix
 function createDivCell(id){
     let cell =  document.createElement("div");
      cell.classList.add("cell");
      cell.setAttribute("id", `div${id}Id`);
+     cell.style.opacity = `${opacity}%`;
      return cell;
 }
 
